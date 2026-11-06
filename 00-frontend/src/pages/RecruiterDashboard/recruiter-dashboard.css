@@ -1,0 +1,156 @@
+.recruiter-dashboard {
+  max-width: 920px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.dashboard-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.dashboard-top h1 {
+  margin: 0 0 6px;
+  font-size: 28px;
+  letter-spacing: -0.03em;
+  color: #ffffff;
+}
+
+.dashboard-subtitle {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 14.5px;
+}
+
+.post-job-cta {
+  height: 44px !important;
+  padding: 0 20px !important;
+  font-size: 14.5px !important;
+  flex-shrink: 0;
+}
+
+.job-list-section-header {
+  padding-top: 6px;
+}
+
+.job-list-section-header h2 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.job-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.my-job-card {
+  border-radius: var(--radius-lg) !important;
+  border: 1px solid var(--border) !important;
+  transition: all 0.25s ease !important;
+}
+
+.my-job-card:hover {
+  border-color: rgba(139, 92, 246, 0.4) !important;
+  transform: translateY(-2px);
+}
+
+.my-job-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 12px;
+}
+
+.my-job-company-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 4px;
+}
+
+.company-badge-small {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 6px;
+  background: rgba(139, 92, 246, 0.14);
+  color: var(--primary-light);
+}
+
+.my-job-company {
+  font-weight: 600;
+  font-size: 13.5px;
+  color: var(--text-muted);
+}
+
+.my-job-title {
+  margin: 0;
+  font-size: 19px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.job-status-pill {
+  font-weight: 700 !important;
+  letter-spacing: 0.05em !important;
+  padding: 4px 10px !important;
+}
+
+.my-job-meta-grid {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 14px;
+  padding: 10px 0 14px;
+  border-bottom: 1px solid var(--border-subtle);
+  margin-bottom: 14px;
+}
+
+.my-job-info {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13.5px;
+  color: var(--text-muted);
+}
+
+.applicant-highlight {
+  color: var(--primary-light);
+  background: rgba(139, 92, 246, 0.1);
+  padding: 3px 10px;
+  border-radius: 6px;
+  border: 1px solid rgba(139, 92, 246, 0.2);
+}
+
+.applicant-highlight strong {
+  color: #ffffff;
+}
+
+.my-job-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.empty-jobs-card {
+  padding: 60px 20px;
+  text-align: center;
+  background: rgba(20, 16, 40, 0.4);
+  border: 1px dashed var(--border);
+  border-radius: var(--radius-lg);
+}
+
+@media (max-width: 768px) {
+  .dashboard-top {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}

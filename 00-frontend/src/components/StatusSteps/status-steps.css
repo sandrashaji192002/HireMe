@@ -1,0 +1,58 @@
+.status-steps {
+  padding: 14px 18px;
+  background: rgba(14, 11, 28, 0.6);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  margin-top: 12px;
+}
+
+.status-steps .ant-steps-item-title {
+  color: var(--text-muted) !important;
+  font-size: 13px !important;
+  font-weight: 600 !important;
+}
+
+.status-steps .ant-steps-item-finish .ant-steps-item-title {
+  color: var(--text) !important;
+}
+
+.status-steps .ant-steps-item-tail::after {
+  background-color: var(--border) !important;
+}
+
+.status-steps .ant-steps-item-finish > .ant-steps-item-container > .ant-steps-item-tail::after {
+  background: var(--primary-gradient) !important;
+}
+
+.status-applied .ant-steps-item-process .ant-steps-item-icon {
+  background: #3b82f6 !important;
+  border-color: #3b82f6 !important;
+}
+.status-applied .ant-steps-item-process .ant-steps-item-title {
+  color: #60a5fa !important;
+}
+
+.status-reviewed .ant-steps-item-process .ant-steps-item-icon {
+  background: #f59e0b !important;
+  border-color: #f59e0b !important;
+}
+.status-reviewed .ant-steps-item-process .ant-steps-item-title {
+  color: #fbbf24 !important;
+}
+
+.status-shortlisted .ant-steps-item-process .ant-steps-item-icon,
+.status-shortlisted .ant-steps-item-finish .ant-steps-item-icon {
+  background: #10b981 !important;
+  border-color: #10b981 !important;
+}
+.status-shortlisted .ant-steps-item-process .ant-steps-item-title {
+  color: #34d399 !important;
+}
+
+.status-rejected .ant-steps-item-error .ant-steps-item-icon {
+  background: #ef4444 !important;
+  border-color: #ef4444 !important;
+}
+.status-rejected .ant-steps-item-error .ant-steps-item-title {
+  color: #f87171 !important;
+}

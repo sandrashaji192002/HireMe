@@ -1,0 +1,24 @@
+.page-content {
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 36px 24px 60px;
+  min-height: calc(100vh - 74px);
+  animation: fadeInContent 0.35s ease-out;
+}
+
+@keyframes fadeInContent {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .page-content {
+    padding: 20px 16px 48px;
+  }
+}

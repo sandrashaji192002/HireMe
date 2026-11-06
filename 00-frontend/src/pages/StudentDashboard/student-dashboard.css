@@ -1,0 +1,229 @@
+.student-dashboard {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.dashboard-hero {
+  margin-bottom: 4px;
+}
+
+.welcome-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 12px;
+  background: rgba(139, 92, 246, 0.12);
+  border: 1px solid rgba(139, 92, 246, 0.3);
+  border-radius: 20px;
+  color: var(--primary-light);
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.dashboard-hero h1 {
+  margin: 0 0 6px;
+  font-size: 30px;
+  letter-spacing: -0.03em;
+  color: #ffffff;
+}
+
+.dashboard-hero p {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 14.5px;
+}
+
+/* Stats Cards */
+.dashboard-stats-strip {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+}
+
+.stat-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 18px 20px;
+  background: rgba(20, 16, 40, 0.7);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-card);
+}
+
+.stat-icon-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  flex-shrink: 0;
+}
+
+.stat-total {
+  background: rgba(139, 92, 246, 0.15);
+  color: var(--primary-light);
+  border: 1px solid rgba(139, 92, 246, 0.3);
+}
+
+.stat-reviewed {
+  background: rgba(245, 158, 11, 0.15);
+  color: #fbbf24;
+  border: 1px solid rgba(245, 158, 11, 0.3);
+}
+
+.stat-shortlisted {
+  background: rgba(16, 185, 129, 0.15);
+  color: #34d399;
+  border: 1px solid rgba(16, 185, 129, 0.3);
+}
+
+.stat-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.stat-value {
+  font-size: 24px;
+  font-weight: 800;
+  color: #ffffff;
+  line-height: 1.1;
+}
+
+.stat-label {
+  font-size: 12.5px;
+  color: var(--text-muted);
+  font-weight: 500;
+  margin-top: 4px;
+}
+
+/* Applications section */
+.applications-section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 8px;
+}
+
+.applications-section-header h2 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.application-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.application-card {
+  border-radius: var(--radius-lg) !important;
+  border: 1px solid var(--border) !important;
+  transition: all 0.25s ease !important;
+}
+
+.application-card:hover {
+  border-color: rgba(139, 92, 246, 0.4) !important;
+  transform: translateY(-2px);
+}
+
+.application-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 12px;
+}
+
+.app-company-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13.5px;
+  color: var(--text-muted);
+  margin-bottom: 4px;
+}
+
+.app-company-name {
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+.app-location {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.app-job-title {
+  margin: 0;
+}
+
+.job-title-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #ffffff;
+  transition: color 0.2s ease;
+}
+
+.job-title-link:hover {
+  color: var(--primary-light);
+}
+
+.title-arrow {
+  color: var(--text-dim);
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.job-title-link:hover .title-arrow {
+  color: var(--primary-light);
+  transform: translate(2px, -2px);
+}
+
+.status-tag-badge {
+  font-weight: 700 !important;
+  letter-spacing: 0.04em !important;
+  padding: 4px 10px !important;
+  border-radius: 6px !important;
+}
+
+.application-card-meta {
+  margin-bottom: 14px;
+}
+
+.applied-date-text {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12.5px;
+  color: var(--text-dim);
+}
+
+.empty-applications-card {
+  padding: 60px 20px;
+  text-align: center;
+  background: rgba(20, 16, 40, 0.4);
+  border: 1px dashed var(--border);
+  border-radius: var(--radius-lg);
+}
+
+.empty-subtext {
+  color: var(--text-dim);
+  margin: 6px 0 16px;
+  font-size: 13.5px;
+}
+
+.dashboard-loading {
+  padding: 80px 0;
+  text-align: center;
+}
