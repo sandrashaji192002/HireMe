@@ -1,13 +1,22 @@
+
 # Dependencies
 node_modules/
 
-# Environment variables
+# Environment files
 .env
 .env.*
+!.env.example
 
-# Build files
+# Build output
 dist/
 build/
 
 # Logs
 *.log
+
+# IDE
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
