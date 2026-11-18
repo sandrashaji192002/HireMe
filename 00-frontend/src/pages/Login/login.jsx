@@ -53,63 +53,89 @@ const Login = () => {
 
   return (
     <div className="login-container">
-      <div className="login-form-wrapper">
-        <div className="auth-brand-badge">
-          <div className="auth-brand-icon">
-            <Sparkles size={22} />
+      <div className="login-card">
+        <div className="login-image-panel">
+          <div className="auth-brand-badge">
+            <div className="auth-brand-icon">
+              <Sparkles size={22} />
+            </div>
+            <span className="auth-brand-name">
+              Hire<span className="brand-highlight">Me</span>
+            </span>
           </div>
-          <span className="auth-brand-name">
-            Hire<span className="brand-highlight">Me</span>
-          </span>
+
+          <div className="image-caption">
+            <h3>Where fresh talent meets great opportunities</h3>
+            <p>
+              Build your profile, apply in one click and track every step of
+              your hiring journey.
+            </p>
+            <div className="image-dots">
+              <span />
+              <span />
+              <span className="active" />
+            </div>
+          </div>
         </div>
 
-        <div className="auth-header">
-          <h2>Welcome back</h2>
-          <p>Sign in to continue to your dashboard</p>
-        </div>
-
-        <div className="login-form" onKeyDown={handleKeyDown}>
-          <div className="input-item">
-            <label>Email Address</label>
-            <Input
-              name="email"
-              prefix={<Mail size={16} className="input-icon" />}
-              placeholder="you@example.com"
-              value={form.email}
-              onChange={onChange}
-              size="large"
-            />
+        <div className="login-form-wrapper">
+          <div className="auth-brand-badge mobile-only">
+            <div className="auth-brand-icon">
+              <Sparkles size={22} />
+            </div>
+            <span className="auth-brand-name">
+              Hire<span className="brand-highlight">Me</span>
+            </span>
           </div>
 
-          <div className="input-item">
-            <label>Password</label>
-            <Input.Password
-              name="password"
-              prefix={<Lock size={16} className="input-icon" />}
-              placeholder="Enter your password"
-              value={form.password}
-              onChange={onChange}
-              size="large"
-            />
+          <div className="auth-header">
+            <h2>Welcome back</h2>
+            <p>Sign in to continue to your dashboard</p>
           </div>
 
-          <Button
-            type="primary"
-            onClick={onClick}
-            loading={loading}
-            size="large"
-            block
-            className="auth-submit-btn"
-          >
-            <span>Sign In</span>
-            <ArrowRight size={16} />
-          </Button>
+          <div className="login-form" onKeyDown={handleKeyDown}>
+            <div className="input-item">
+              <label>Email Address</label>
+              <Input
+                name="email"
+                prefix={<Mail size={16} className="input-icon" />}
+                placeholder="you@example.com"
+                value={form.email}
+                onChange={onChange}
+                size="large"
+              />
+            </div>
 
-          <div className="auth-footer">
-            <span>Don't have an account?</span>{' '}
-            <Link to="/register" className="reg-link">
-              Create an account
-            </Link>
+            <div className="input-item">
+              <label>Password</label>
+              <Input.Password
+                name="password"
+                prefix={<Lock size={16} className="input-icon" />}
+                placeholder="Enter your password"
+                value={form.password}
+                onChange={onChange}
+                size="large"
+              />
+            </div>
+
+            <Button
+              type="primary"
+              onClick={onClick}
+              loading={loading}
+              size="large"
+              block
+              className="auth-submit-btn"
+            >
+              <span>Sign In</span>
+              <ArrowRight size={16} />
+            </Button>
+
+            <div className="auth-footer">
+              <span>Don't have an account?</span>{' '}
+              <Link to="/register" className="reg-link">
+                Create an account
+              </Link>
+            </div>
           </div>
         </div>
       </div>
