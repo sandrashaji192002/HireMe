@@ -4,6 +4,56 @@ A full-stack job portal that connects students looking for jobs and internships 
 
 Built with **React, Express, Node.js, Sequelize and MySQL**, and secured with **JWT authentication**.
 
+## Screenshots
+
+### Login
+
+![Login](./screenshots/login.png)
+
+### Register
+
+![Register](./screenshots/register.png)
+
+### Student Dashboard
+
+![Student Dashboard](./screenshots/student-dashboard.png)
+
+### Job Listings
+
+![Job Listings](./screenshots/job-listings.png)
+
+### Job Details
+
+![Job Details ](./screenshots/view-job.png)
+
+### Apply for a Job
+
+![Apply for a Job](./screenshots/apply-job.png)
+
+### Student Profile Photo Update
+
+![Student Profile Photo Update](./screenshots/student-profilepic-update.png)
+
+### Student Profile
+
+![Student Profile](./screenshots/student-profile.png)
+
+### Student Profile Update
+
+![Student Profile Update](./screenshots/student-profile-update.png)
+
+### Recruiter Dashboard
+
+![Recruiter Dashboard](./screenshots/recruiter-dashboard.png)
+
+### Post a Job
+
+![Post a Job](./screenshots/post-job.png)
+
+### Student Applications
+
+![Student Applications](./screenshots/student-applications.png)
+
 ## Features
 
 ### Authentication
@@ -134,8 +184,8 @@ HireMe/
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/<your-username>/<your-repo>.git
-cd <your-repo>
+git clone https://github.com/sandrashaji192002/HireMe.git
+cd HireMe
 ```
 
 ### 2. Create the database
@@ -265,8 +315,8 @@ All routes except register and login need the header `Authorization: Bearer <tok
 
 ## Author
 
-**Your Name**
-GitHub: [@your-username](https://github.com/your-username)
+**Sandra Shaji**
+GitHub: [@sandrashaji192002](https://github.com/sandrashaji192002)
 
 ---
 
